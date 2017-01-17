@@ -48,6 +48,23 @@ goog.require('Blockly.Msg');
  * them to msg/json/qqq.json, and they show up in the translation console.
  */
 
+/// {{Notranslate}} Hue value for all logic blocks.
+Blockly.Msg.LOGIC_HUE = '210';
+/// {{Notranslate}} Hue value for all loop blocks.
+Blockly.Msg.LOOPS_HUE = '120';
+/// {{Notranslate}} Hue value for all math blocks.
+Blockly.Msg.MATH_HUE = '230';
+/// {{Notranslate}} Hue value for all text blocks.
+Blockly.Msg.TEXTS_HUE = '160';
+/// {{Notranslate}} Hue value for all list blocks.
+Blockly.Msg.LISTS_HUE = '260';
+/// {{Notranslate}} Hue value for all colour blocks.
+Blockly.Msg.COLOUR_HUE = '20';
+/// {{Notranslate}} Hue value for all variable blocks.
+Blockly.Msg.VARIABLES_HUE = '330';
+/// {{Notranslate}} Hue value for all procedure blocks.
+Blockly.Msg.PROCEDURES_HUE = '290';
+
 /// default name - A simple, general default name for a variable, preferably short.
 /// For more context, see
 /// [[Translating:Blockly#infrequent_message_types]].\n{{Identical|Item}}
@@ -222,7 +239,7 @@ Blockly.Msg.CONTROLS_IF_TOOLTIP_3 = 'If the first value is true, then do the fir
 /// tooltip - Describes [https://github.com/google/blockly/wiki/IfElse#if-else-if-else-blocks if-else-if-else blocks].  Consider using your language's translation of [https://en.wikipedia.org/wiki/If_statement https://en.wikipedia.org/wiki/If_statement], if present.
 Blockly.Msg.CONTROLS_IF_TOOLTIP_4 = 'If the first value is true, then do the first block of statements. Otherwise, if the second value is true, do the second block of statements. If none of the values are true, do the last block of statements.';
 /// block text - See [https://github.com/google/blockly/wiki/IfElse https://github.com/google/blockly/wiki/IfElse].
-/// It is recommended, but not essential, that this have text in common with the translation of 'else if'
+/// It is recommended, but not essential, that this have text in common with the translation of 'else if'\n{{Identical|If}}
 Blockly.Msg.CONTROLS_IF_MSG_IF = 'if';
 /// block text - See [https://github.com/google/blockly/wiki/IfElse https://github.com/google/blockly/wiki/IfElse].  The English words "otherwise if" would probably be clearer than "else if", but the latter is used because it is traditional and shorter.
 Blockly.Msg.CONTROLS_IF_MSG_ELSEIF = 'else if';
@@ -966,7 +983,7 @@ Blockly.Msg.LISTS_GET_SUBLIST_TAIL = '';
 /// [[File:Blockly-get-sublist.png]]
 Blockly.Msg.LISTS_GET_SUBLIST_TOOLTIP = 'Creates a copy of the specified portion of a list.';
 
-/// url - Information describing sorting a list.
+/// {{optional}}\nurl - Information describing sorting a list.
 Blockly.Msg.LISTS_SORT_HELPURL = 'https://github.com/google/blockly/wiki/Lists#sorting-a-list';
 /// Sort as type %1 (numeric or alphabetic) in order %2 (ascending or descending) a list of items %3.\n{{Identical|Sort}}
 Blockly.Msg.LISTS_SORT_TITLE = 'sort %1 %2 %3';
@@ -1107,7 +1124,7 @@ Blockly.Msg.PROCEDURES_CREATE_DO = 'Create "%1"';
 /// tooltip - If the first value is true, this causes the second value to be returned
 /// immediately from the enclosing function.
 Blockly.Msg.PROCEDURES_IFRETURN_TOOLTIP = 'If a value is true, then return a second value.';
-/// url - Information about guard clauses.
+/// {{optional}}\nurl - Information about guard clauses.
 Blockly.Msg.PROCEDURES_IFRETURN_HELPURL = 'http://c2.com/cgi/wiki?GuardClause';
 /// warning - This appears if the user tries to use this block outside of a function definition.
 Blockly.Msg.PROCEDURES_IFRETURN_WARNING = 'Warning: This block may be used only within a function definition.';
